@@ -45,7 +45,7 @@ class NN():
         callbacks_list = [checkpoint]
 
         self.nn_train.fit(data, label, batch_size=batch_size, validation_data=(val_data, val_label),
-                        callbacks=callbacks_list, shuffle=True, nb_epoch=self.epochs) #, verbose=0)
+                        callbacks=callbacks_list, shuffle=True, epochs=self.epochs) #, verbose=0)
 
         self.nn_train.save_weights("srcnn.h5")
         
