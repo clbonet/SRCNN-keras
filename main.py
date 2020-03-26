@@ -30,9 +30,7 @@ class NN():
         
         model_training = Model(input_img, output_img)
         adam = Adam(lr=0.0003)
-        model_training.compile(optimizer=adam,loss="mean_squared_error",metrics=['mean_squared_error']) #self.custom_loss(log_noise))
-
-#         self.model_out = Model(input_img,[output_img,log_noise])
+        model_training.compile(optimizer=adam,loss="mean_squared_error",metrics=['mean_squared_error'])
 
         return model_training
 
