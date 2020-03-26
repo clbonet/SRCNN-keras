@@ -4,10 +4,12 @@
 The original paper is [Learning a Deep Convolutional Network for Image Super-Resolution](https://arxiv.org/abs/1501.00092)
 
 <p align="center">
-  <img src="https://github.com/MarkPrecursor/SRCNN-keras/blob/master/SRCNN.png" width="800"/>
+  <img src="https://github.com/MarkPrecursor/SRCNN-keras/blob/master/readme/SRCNN.png" width="800"/>
 </p>
 
-My implementation have some difference with the original paper, include:
+These was forked from https://github.com/MarkPrecursor/SRCNN-keras.
+
+The implementation have some difference with the original paper, include:
 
 * use Adam alghorithm for optimization, with learning rate 0.0003 for all layers.
 * Use the opencv library to produce the training data and test data, not the matlab library. This difference may caused some deteriorate on the final results.
@@ -21,6 +23,8 @@ open **prepare_data.py** and change the data path to your data
 Excute:
 `python prepare_data.py`
 
+You can download the Train and Test data with the code from the original paper here: http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html
+
 ### training and test:
 Excute:
 `python main.py`
@@ -29,7 +33,7 @@ Excute:
 ## Result(training for 200 epoches on 91 images, with upscaling factor 2):
 Results on Set5 dataset:
 <p align="center">
-  <img src="https://github.com/MarkPrecursor/SRCNN-keras/blob/master/result.png" width="800"/>
+  <img src="https://github.com/MarkPrecursor/SRCNN-keras/blob/master/readme/result.png" width="800"/>
 </p>
 
 
