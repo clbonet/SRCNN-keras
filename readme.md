@@ -4,8 +4,10 @@
 The original paper is [Learning a Deep Convolutional Network for Image Super-Resolution](https://arxiv.org/abs/1501.00092)
 
 <p align="center">
-  <img src="https://github.com/MarkPrecursor/SRCNN-keras/blob/master/readme/SRCNN.png" width="800"/>
+  <img src="https://github.com/MarkPrecursor/SRCNN-keras/blob/master/SRCNN.png" width="800"/>
 </p>
+
+
 
 These was forked from https://github.com/MarkPrecursor/SRCNN-keras.
 
@@ -33,7 +35,7 @@ Excute:
 ## Result(training for 200 epoches on 91 images, with upscaling factor 2):
 Results on Set5 dataset:
 <p align="center">
-  <img src="https://github.com/MarkPrecursor/SRCNN-keras/blob/master/readme/result.png" width="800"/>
+  <img src="https://github.com/MarkPrecursor/SRCNN-keras/blob/master/result.png" width="800"/>
 </p>
 
 
