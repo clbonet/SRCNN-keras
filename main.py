@@ -43,7 +43,7 @@ class NN():
         callbacks_list = [checkpoint]
 
         self.nn_train.fit(data, label, batch_size=batch_size, validation_data=(val_data, val_label),
-                        callbacks=callbacks_list, shuffle=True, epochs=self.epochs) #, verbose=0)
+                        callbacks=callbacks_list, shuffle=True, epochs=self.epochs, verbose=0)
 
         self.nn_train.save_weights("srcnn.h5")
         
@@ -52,6 +52,8 @@ class NN():
         
         if load_weights:
             srcnn_model.load_weights("srcnn_200.h5")
+        else:
+            srcnn_model.set_weights(self.nn_train.get_weights())
             
         IMG_NAME = img_name
         INPUT_NAME = "input.jpg"
